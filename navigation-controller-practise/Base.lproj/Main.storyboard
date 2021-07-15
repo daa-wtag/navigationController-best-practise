@@ -1,24 +1,228 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mci-ZZ-1Ct">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--number1-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="Number1VC" customModule="navigation_controller_practise" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubU-Lg-DiP">
+                                <rect key="frame" x="159" y="433" width="96" height="30"/>
+                                <state key="normal" title="goto Screen 2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="gotoScreenNumber2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DZW-Up-red"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owt-zg-9Gc">
+                                <rect key="frame" x="184" y="268" width="46" height="30"/>
+                                <state key="normal" title="gotoScreenNumber2_1"/>
+                                <connections>
+                                    <action selector="gotoScreenNumber2_1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2N6-g1-Oem"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAc-or-lI7">
+                                <rect key="frame" x="184" y="604" width="46" height="30"/>
+                                <state key="normal" title="gotoScreenNumber2_again"/>
+                                <connections>
+                                    <action selector="gotoScreenNumber2_again:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y4B-xe-RTC"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JAc-or-lI7" secondAttribute="trailing" constant="184" id="07E-mi-Qgv"/>
+                            <constraint firstItem="owt-zg-9Gc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="184" id="1MT-e8-nwc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="owt-zg-9Gc" secondAttribute="trailing" constant="184" id="2DU-eU-IDe"/>
+                            <constraint firstItem="ubU-Lg-DiP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="73y-qo-uZZ"/>
+                            <constraint firstItem="JAc-or-lI7" firstAttribute="top" secondItem="ubU-Lg-DiP" secondAttribute="bottom" constant="141" id="H6t-YZ-hC7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JAc-or-lI7" secondAttribute="bottom" constant="228" id="KmZ-b6-bez"/>
+                            <constraint firstItem="owt-zg-9Gc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="180" id="YtR-zf-n2A"/>
+                            <constraint firstItem="ubU-Lg-DiP" firstAttribute="top" secondItem="owt-zg-9Gc" secondAttribute="bottom" constant="135" id="ZGw-zY-zTL"/>
+                            <constraint firstItem="JAc-or-lI7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="184" id="cM5-Ly-I86"/>
+                            <constraint firstItem="ubU-Lg-DiP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q30-kK-EeM"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="number1" id="M3s-IK-EQi"/>
+                    <connections>
+                        <segue destination="8rF-WL-L7I" kind="show" identifier="segue2" id="ah2-lQ-rvP"/>
+                        <segue destination="8Ec-hM-XzD" kind="show" identifier="segue2_1" id="1KQ-iS-Bbo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1960.8695652173915" y="943.52678571428567"/>
+        </scene>
+        <!--number2-->
+        <scene sceneID="UHO-qY-A7u">
+            <objects>
+                <viewController id="8rF-WL-L7I" customClass="Number2VC" customModule="navigation_controller_practise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fF6-RG-Ol2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="805-ug-ZCy">
+                                <rect key="frame" x="158.5" y="433" width="97" height="30"/>
+                                <state key="normal" title="goto Screen 3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="gotScreenNumber3:" destination="8rF-WL-L7I" eventType="touchUpInside" id="aK5-iy-30q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lDV-0U-XF8"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="805-ug-ZCy" firstAttribute="centerY" secondItem="fF6-RG-Ol2" secondAttribute="centerY" id="Kkp-j8-WXr"/>
+                            <constraint firstItem="805-ug-ZCy" firstAttribute="centerX" secondItem="fF6-RG-Ol2" secondAttribute="centerX" id="oNv-5H-LrK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="number2" id="a9K-Oq-C52"/>
+                    <connections>
+                        <segue destination="Z6b-fI-l3Q" kind="show" identifier="segue3" id="K0W-wX-LfP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HLL-XY-xs7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3204" y="944"/>
+        </scene>
+        <!--number3-->
+        <scene sceneID="wzf-fg-JPl">
+            <objects>
+                <viewController id="Z6b-fI-l3Q" customClass="Number3VC" customModule="navigation_controller_practise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i26-XH-ztu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwb-WB-004">
+                                <rect key="frame" x="157.5" y="433" width="99" height="30"/>
+                                <state key="normal" title="gotoScreen3.1"/>
+                                <connections>
+                                    <action selector="gotoScreen3_1:" destination="Z6b-fI-l3Q" eventType="touchUpInside" id="cVW-Ey-2nr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XPu-V5-h8c"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="jwb-WB-004" firstAttribute="centerY" secondItem="i26-XH-ztu" secondAttribute="centerY" id="5n2-rq-TQx"/>
+                            <constraint firstItem="jwb-WB-004" firstAttribute="centerX" secondItem="i26-XH-ztu" secondAttribute="centerX" id="XzQ-JA-DLS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="number3" id="nVP-kF-MYT"/>
+                    <connections>
+                        <segue destination="p5H-XW-LRy" kind="show" identifier="segue3_1_new" id="Tth-Fx-roc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NaW-wI-lch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4432" y="944"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Gh-BL-Tju">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mci-ZZ-1Ct" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9M9-vb-ijt">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemGrayColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" systemColor="systemRedColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="38G-By-OvN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lit-YV-O2q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1960.8695652173915" y="116.51785714285714"/>
+        </scene>
+        <!--number2.1-->
+        <scene sceneID="juH-gP-BVk">
+            <objects>
+                <viewController id="8Ec-hM-XzD" customClass="Number2_1VC" customModule="navigation_controller_practise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EOp-L5-dyp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSF-5i-ZVV">
+                                <rect key="frame" x="154" y="433" width="106" height="30"/>
+                                <state key="normal" title="gotoNumber3.1"/>
+                                <connections>
+                                    <action selector="gotoNumber3_1:" destination="8Ec-hM-XzD" eventType="touchUpInside" id="rX6-p5-Jsa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kt8-a0-LXp"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="SSF-5i-ZVV" firstAttribute="centerX" secondItem="EOp-L5-dyp" secondAttribute="centerX" id="34N-8m-4D4"/>
+                            <constraint firstItem="SSF-5i-ZVV" firstAttribute="centerY" secondItem="EOp-L5-dyp" secondAttribute="centerY" id="zuZ-0g-Hnv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="number2.1" id="mHj-ao-cbc"/>
+                    <connections>
+                        <segue destination="p5H-XW-LRy" kind="show" identifier="segue3_1" id="bOo-p3-hI3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ks-pv-0UD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3203" y="1787"/>
+        </scene>
+        <!--number3.1-->
+        <scene sceneID="gaU-rY-FhX">
+            <objects>
+                <viewController id="p5H-XW-LRy" customClass="Number3_1VC" customModule="navigation_controller_practise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hB6-Od-c11">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="0Xn-Md-fuI"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="number3.1" id="vGM-8a-HTe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yCY-yR-TTi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4432" y="2804"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bOo-p3-hI3"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

@@ -7,11 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class Number1VC: UIViewController {
 
+    @IBAction func gotoScreenNumber2(_ sender: UIButton) {
+        performSegue(withIdentifier: "segue1", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
 
