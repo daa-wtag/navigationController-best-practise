@@ -26,14 +26,22 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owt-zg-9Gc">
-                                <rect key="frame" x="184" y="268" width="46" height="30"/>
+                                <rect key="frame" x="95" y="241" width="209" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="209" id="N34-zk-wEY"/>
+                                    <constraint firstAttribute="height" constant="57" id="kVx-TT-zeG"/>
+                                </constraints>
                                 <state key="normal" title="gotoScreenNumber2_1"/>
                                 <connections>
                                     <action selector="gotoScreenNumber2_1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2N6-g1-Oem"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAc-or-lI7">
-                                <rect key="frame" x="184" y="604" width="46" height="30"/>
+                                <rect key="frame" x="103" y="572" width="233" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="233" id="Jff-dK-P7m"/>
+                                    <constraint firstAttribute="height" constant="62" id="bnB-Pv-F2A"/>
+                                </constraints>
                                 <state key="normal" title="gotoScreenNumber2_again"/>
                                 <connections>
                                     <action selector="gotoScreenNumber2_again:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y4B-xe-RTC"/>
@@ -43,19 +51,19 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JAc-or-lI7" secondAttribute="trailing" constant="184" id="07E-mi-Qgv"/>
-                            <constraint firstItem="owt-zg-9Gc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="184" id="1MT-e8-nwc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="owt-zg-9Gc" secondAttribute="trailing" constant="184" id="2DU-eU-IDe"/>
-                            <constraint firstItem="ubU-Lg-DiP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="73y-qo-uZZ"/>
-                            <constraint firstItem="JAc-or-lI7" firstAttribute="top" secondItem="ubU-Lg-DiP" secondAttribute="bottom" constant="141" id="H6t-YZ-hC7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JAc-or-lI7" secondAttribute="bottom" constant="228" id="KmZ-b6-bez"/>
-                            <constraint firstItem="owt-zg-9Gc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="180" id="YtR-zf-n2A"/>
-                            <constraint firstItem="ubU-Lg-DiP" firstAttribute="top" secondItem="owt-zg-9Gc" secondAttribute="bottom" constant="135" id="ZGw-zY-zTL"/>
-                            <constraint firstItem="JAc-or-lI7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="184" id="cM5-Ly-I86"/>
-                            <constraint firstItem="ubU-Lg-DiP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q30-kK-EeM"/>
+                            <constraint firstItem="ubU-Lg-DiP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0ob-mc-7oP"/>
+                            <constraint firstItem="ubU-Lg-DiP" firstAttribute="top" secondItem="owt-zg-9Gc" secondAttribute="bottom" constant="135" id="53w-Gq-I0z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JAc-or-lI7" secondAttribute="bottom" constant="228" id="KyA-2m-Qcw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="owt-zg-9Gc" secondAttribute="trailing" constant="110" id="adQ-4c-GjR"/>
+                            <constraint firstItem="ubU-Lg-DiP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="g1o-4Q-XaW"/>
+                            <constraint firstItem="owt-zg-9Gc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="kSM-iX-Yk5"/>
+                            <constraint firstItem="owt-zg-9Gc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="153" id="mRx-r2-a9c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JAc-or-lI7" secondAttribute="trailing" constant="78" id="pa7-4N-mbx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="number1" id="M3s-IK-EQi"/>
+                    <navigationItem key="navigationItem" title="number1" id="M3s-IK-EQi">
+                        <barButtonItem key="backBarButtonItem" title="BackTo_1" id="hwE-5t-xnA"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="8rF-WL-L7I" kind="show" identifier="segue2" id="ah2-lQ-rvP"/>
                         <segue destination="8Ec-hM-XzD" kind="show" identifier="segue2_1" id="1KQ-iS-Bbo"/>
@@ -76,7 +84,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="805-ug-ZCy">
                                 <rect key="frame" x="158.5" y="433" width="97" height="30"/>
                                 <state key="normal" title="goto Screen 3">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="gotScreenNumber3:" destination="8rF-WL-L7I" eventType="touchUpInside" id="aK5-iy-30q"/>
@@ -90,7 +98,9 @@
                             <constraint firstItem="805-ug-ZCy" firstAttribute="centerX" secondItem="fF6-RG-Ol2" secondAttribute="centerX" id="oNv-5H-LrK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="number2" id="a9K-Oq-C52"/>
+                    <navigationItem key="navigationItem" title="number2" id="a9K-Oq-C52">
+                        <barButtonItem key="backBarButtonItem" title="BackTo2" id="Cuz-1r-y0l"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="Z6b-fI-l3Q" kind="show" identifier="segue3" id="K0W-wX-LfP"/>
                     </connections>
@@ -109,7 +119,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwb-WB-004">
                                 <rect key="frame" x="157.5" y="433" width="99" height="30"/>
-                                <state key="normal" title="gotoScreen3.1"/>
+                                <state key="normal" title="gotoScreen3.1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="gotoScreen3_1:" destination="Z6b-fI-l3Q" eventType="touchUpInside" id="cVW-Ey-2nr"/>
                                 </connections>
@@ -195,7 +207,9 @@
                         <viewLayoutGuide key="safeArea" id="0Xn-Md-fuI"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="number3.1" id="vGM-8a-HTe"/>
+                    <navigationItem key="navigationItem" title="number3.1" id="vGM-8a-HTe">
+                        <barButtonItem key="backBarButtonItem" title="BackTo_2.1" id="KcY-dF-QrG"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yCY-yR-TTi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
