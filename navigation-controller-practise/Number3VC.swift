@@ -9,6 +9,9 @@ import UIKit
 
 class Number3VC: UIViewController {
 
+    @IBAction func gotoNumber1_Pressed(_ sender: UIBarButtonItem) {
+        navigationController?.popToRootViewController(animated: true)
+    }
     @IBAction func gotoScreen3_1(_ sender: UIButton) {
         performSegue(withIdentifier: "segue3_1_new", sender: self)
     }

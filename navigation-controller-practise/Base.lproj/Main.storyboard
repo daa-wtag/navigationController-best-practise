@@ -134,7 +134,13 @@
                             <constraint firstItem="jwb-WB-004" firstAttribute="centerX" secondItem="i26-XH-ztu" secondAttribute="centerX" id="XzQ-JA-DLS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="number3" id="nVP-kF-MYT"/>
+                    <navigationItem key="navigationItem" title="number3" id="nVP-kF-MYT">
+                        <barButtonItem key="rightBarButtonItem" title="goto number1" id="Qm9-Hd-sit">
+                            <connections>
+                                <action selector="gotoNumber1_Pressed:" destination="Z6b-fI-l3Q" id="0tL-oO-vMW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="p5H-XW-LRy" kind="show" identifier="segue3_1_new" id="Tth-Fx-roc"/>
                     </connections>
@@ -163,7 +169,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lit-YV-O2q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1960.8695652173915" y="116.51785714285714"/>
+            <point key="canvasLocation" x="499" y="944"/>
         </scene>
         <!--number2.1-->
         <scene sceneID="juH-gP-BVk">
@@ -209,6 +215,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="number3.1" id="vGM-8a-HTe">
                         <barButtonItem key="backBarButtonItem" title="BackTo_2.1" id="KcY-dF-QrG"/>
+                        <barButtonItem key="rightBarButtonItem" title="goto number1" id="IUa-bs-sTv">
+                            <connections>
+                                <action selector="gotoNumber1_Pressed:" destination="p5H-XW-LRy" id="a1U-xP-f94"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yCY-yR-TTi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -217,7 +228,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bOo-p3-hI3"/>
+        <segue reference="Tth-Fx-roc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemGrayColor">

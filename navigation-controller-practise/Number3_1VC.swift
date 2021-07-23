@@ -15,6 +15,9 @@ print("hello")
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func gotoNumber1_Pressed(_ sender: UIBarButtonItem) {
+        navigationController?.popToRootViewController(animated: true)
+    }
 
     /*
     // MARK: - Navigation
